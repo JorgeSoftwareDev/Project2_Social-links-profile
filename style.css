@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', Verdana, 'Geneva', Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+
+}
+
+.focused-build{
+
+}
+
+#name{
+
+}
+
+#location{
+
+}
+
+#summary{
+
+}
+
+.socials{
+
+}
+
+a{
+
+}
+
+a:hover{
+
+}
+
+a:focus{
+
+}
+
+
+.attribution{ 
+    font-size: 11px; 
+    text-align: center; 
+    color: hsl(228, 45%, 44%);
+}
