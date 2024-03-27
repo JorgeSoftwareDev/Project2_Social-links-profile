@@ -6,25 +6,33 @@
     font-family: 'Inter', Verdana, 'Geneva', Tahoma, sans-serif;
     font-weight: 400;
     color: hsl(0, 0%, 100%);
+    overflow: hidden;
 }
 
 body{
     display: flex;
-    height: 100vh;
+    height: 100dvh;
+    width: 100dvw;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    align-content: center;
     background-color: hsl(0, 0%, 8%);
+    padding: 0;
+    margin: 0;
 }
 
 .focused-build{
 display: flex;
 align-items: center;
 flex-direction: column;
-margin: 20px auto;
+margin-bottom: 10px;
 background-color: hsl(0, 0%, 12%);
 border-radius: 15px;
-padding: 50px;
+padding: 40px;
+
+max-width: 485px;
+
 }
 
 img{
@@ -62,17 +70,19 @@ padding: 10px 10px 20px 10px;
 display: flex;
 flex-direction: column;
 align-items: center;
+width: 100%;
 
 }
 
 .socials a{
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 1.6rem;
     --b-radius: 15px;
     text-align: center;
     text-decoration: none;
-    width: 350px;
-    padding: 10px 0 10px;
+    width: 100%;
+    padding: 12px 0 10px;
     background-color: hsl(0, 0%, 20%);
     margin: 10px;
     height: 50px;
@@ -137,10 +147,21 @@ a:after {
 
 a:hover{
     background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
 }
 
+
 .attribution{ 
-    font-size: 11px; 
+    font-size: 15px; 
     text-align: center; 
     color: hsl(228, 45%, 44%);
+}
+
+@media  (max-width: 480px) {
+    
+    .focused-build{
+        margin: 0 0 5px;
+        width: 90vw;
+        min-height: 650px;
+    }
 }
