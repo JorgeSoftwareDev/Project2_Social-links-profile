@@ -8,6 +8,7 @@
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 - [Author](#author)
+- [Frontend Mentor](#Frontend-Mentor)
 
 # Overview
 
@@ -49,7 +50,7 @@
 ### Links
 
 - Solution URL: [Github code](https://github.com/JorgeSoftwareDev/Project2_Social-links-profile)
-- Live Site URL: [netifly](https://your-live-site-url.com)
+- Live Site URL: [Netifly Live Site](https://main--transcendent-pithivier-1b1aa1.netlify.app/)
 
 ## My process
 
