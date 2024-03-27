@@ -6,7 +6,7 @@
     font-family: 'Inter', Verdana, 'Geneva', Tahoma, sans-serif;
     font-weight: 400;
     color: hsl(0, 0%, 100%);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 body{
@@ -18,40 +18,40 @@ body{
     justify-content: center;
     align-content: center;
     background-color: hsl(0, 0%, 8%);
-    padding: 0;
-    margin: 0;
 }
 
 .focused-build{
-display: flex;
-align-items: center;
-flex-direction: column;
-margin-bottom: 10px;
-background-color: hsl(0, 0%, 12%);
-border-radius: 15px;
-padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 15px;
+    padding: 20px;
+    width: 481px;
+    height: 800px;
 
-max-width: 485px;
 
 }
 
 img{
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
+    height: 25vh;
+    object-fit: cover;
     border-radius: 50%;
-    padding: 25px;
+    padding: 10px;
 }
 .info{
-display: flex;
-flex-direction: column;
-text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 15vh;
 }
 
 #name{
     font-family: 'Inter';
     font-weight: 700;
     margin-bottom: 10px;
+    height: 5vh;
 
 }
 
@@ -63,29 +63,29 @@ text-align: center;
 }
 
 #summary{
-padding: 10px 10px 20px 10px;
+    padding-bottom: 10px ;
 }
 
 .socials{
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50%;
 
 }
 
 .socials a{
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.6rem;
     --b-radius: 15px;
     text-align: center;
     text-decoration: none;
     width: 100%;
-    padding: 12px 0 10px;
+    padding: 10px;
     background-color: hsl(0, 0%, 20%);
     margin: 10px;
-    height: 50px;
+    height: 15%;
     border: none;
     outline: none;
     color: #fff;
@@ -111,8 +111,6 @@ a:before {
     border-radius: var(--b-radius);
 
 }
-
-
 
 a:focus:before {
     opacity: 1;
@@ -154,14 +152,129 @@ a:hover{
 .attribution{ 
     font-size: 15px; 
     text-align: center; 
-    color: hsl(228, 45%, 44%);
 }
 
-@media  (max-width: 480px) {
+.attribution a{
+    color: hsl(228, 78%, 72%);
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 480px) and (max-width:1440){
     
+
     .focused-build{
-        margin: 0 0 5px;
-        width: 90vw;
-        min-height: 650px;
+    margin-bottom: 10px;
+    padding: 10px;
+    min-width: 300px;
+    min-height: 400px;
+    width: 90%;
+    min-height: 400px;
+    max-height: 575px;
     }
+    
+    img{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 5px;
+    }
+    
+    #name{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    #location{
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: hsl(75, 94%, 57%);
+    }
+    
+    #summary{
+        padding: 5px;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    
+    .socials{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    
+    }
+    
+    .socials a{
+        font-weight: 600;
+        font-size: 14px;
+        height: 15%;
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    .attribution{ 
+        font-size: 10px; 
+    
+    }
+    
+}
+
+@media only screen and (max-width: 479px){
+    
+
+    .focused-build{
+        margin-bottom: 5px;
+        padding: 5px;
+        width: 250px;
+        height: 400px;
+
+    }
+    
+    img{
+        height:100px;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    
+    #name{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    
+    #location{
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: hsl(75, 94%, 57%);
+    }
+    
+    #summary{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    
+    .socials{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 225px;
+        height: 200px;
+    
+    }
+    
+    .socials a{
+        font-weight: 600;
+        font-size: 14px;
+        height: 15%;
+        padding: 5px;
+        margin: 5px;
+        width: 220px;
+    }
+    
+    .attribution{ 
+        font-size: 10px; 
+    
+    }
+    
 }
