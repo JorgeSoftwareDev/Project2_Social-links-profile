@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
@@ -22,9 +21,10 @@ body{
 display: flex;
 align-items: center;
 flex-direction: column;
-border: 1px solid hsl(0, 0%, 12%);
 margin: 20px auto;
 background-color: hsl(0, 0%, 12%);
+border-radius: 15px;
+padding: 50px;
 }
 
 img{
@@ -43,34 +43,101 @@ text-align: center;
 #name{
     font-family: 'Inter';
     font-weight: 700;
+    margin-bottom: 10px;
+
 }
 
 #location{
-
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: hsl(75, 94%, 57%);
 }
 
 #summary{
-
+padding: 10px 10px 20px 10px;
 }
 
 .socials{
 display: flex;
 flex-direction: column;
 align-items: center;
+
 }
 
-a{
+.socials a{
+    font-weight: 700;
+    font-size: 24px;
+    --b-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 350px;
+    padding: 10px 0 10px;
+    background-color: hsl(0, 0%, 20%);
+    margin: 10px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: var(--b-radius);
+}
+a:before {
+    content: '';
+    background: linear-gradient(90deg, hsl(0, 100%, 50%), hsl(27, 100%, 50%), hsl(75, 94%, 57%), hsl(103, 100%, 50%), hsl(230, 100%, 50%), hsl(240, 100%, 25%), hsl(270, 50%, 40%),hsl(0, 100%, 50%));
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: shimmer 40s linear infinite;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    border-radius: var(--b-radius);
 
+}
+
+
+
+a:focus:before {
+    opacity: 1;
+}
+a:active {
+    color: hsl(0, 0%, 20%);
+}
+
+a:active:after {
+    background: transparent;
+}
+
+
+a:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: var(--b-radius);
+    color: hsl(0, 0%, 20%);
+
+}
+
+@keyframes shimmer {
+    0%, 100% { background-position: 0 0; }
+    25%, 75% { background-position: 200% 0; }
+    50% { background-position: 400% 0; }
 }
 
 a:hover{
-
+    background-color: hsl(75, 94%, 57%);
 }
-
-a:focus{
-
-}
-
 
 .attribution{ 
     font-size: 11px; 
